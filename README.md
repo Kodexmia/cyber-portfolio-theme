@@ -24,7 +24,7 @@ Each template mirrors the original HTML design and includes fixed navigation, sp
 
 ### Modern Design
 
-* Mint-green accent colour palette
+* blue-green accent colour palette
 * Clean typography (Poppins)
 * Fixed header navigation
 * Responsive layout across all devices
@@ -84,8 +84,10 @@ Navigate to **Pages → Add New** and create:
 | About          | About Page          |
 | Projects       | Projects Page       |
 | Portfolio      | Portfolio Page      |
-| Certifications | Certifications Page |
+| Certifications*| Certifications Page |
 | Contact        | Contact Page        |
+
+*Label the URL slugs for Certifications as Certs
 
 Each template is mapped inside the theme so the styling is automatic.
 
