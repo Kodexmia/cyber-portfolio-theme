@@ -57,11 +57,142 @@ Paste the form code into your CF7 form:
 [submit class:cf7-submit "Send Message"]
 
 <p class="cf7-note">* Required fields. Your information will be kept confidential.</p>
+
+### Contact Form 7 Support Contact Form 7 Styling 
+.wpcf7-form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wpcf7-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 1.25rem;
+}
+
+/* Make message field grow to fill space */
+.wpcf7-form label:has(.cf7-textarea) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.wpcf7-form .cf7-input,
+.wpcf7-form .cf7-textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1.5px solid #E5E7EB;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #1F2937;
+  background: #FFFFFF;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  margin-top: 0.5rem;
+}
+
+.wpcf7-form .cf7-input:focus,
+.wpcf7-form .cf7-textarea:focus {
+  outline: none;
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Message textarea grows to fill available space */
+.wpcf7-form .cf7-textarea {
+  flex: 1;
+  min-height: 200px;
+  resize: vertical;
+}
+
+.wpcf7-form .cf7-submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #3B82F6;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.wpcf7-form .cf7-submit:hover {
+  background: #2563EB;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.wpcf7-form .cf7-submit:active {
+  transform: translateY(0);
+}
+
+.wpcf7-form .cf7-note {
+  font-size: 0.85rem;
+  color: #6B7280;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Remove default CF7 styles */
+.wpcf7-form p {
+  margin: 0;
+}
+
+.wpcf7-form br {
+  display: none;
+}
+
+/* Validation messages */
+.wpcf7-not-valid-tip {
+  font-size: 0.8rem;
+  color: #EF4444;
+  margin-top: 0.25rem;
+}
+
+.wpcf7-response-output {
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.wpcf7-mail-sent-ok {
+  border: 2px solid #10B981;
+  background: #ECFDF5;
+  color: #065F46;
+}
+
+.wpcf7-validation-errors {
+  border: 2px solid #F59E0B;
+  background: #FFFBEB;
+  color: #92400E;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .wpcf7-form .cf7-textarea {
+    min-height: 150px;
+  }
+}
+
 ```
 
 Insert the generated shortcode into the **Contact** page.
 
+
 ---
+
+
+
 
 ## Installation
 
